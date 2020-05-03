@@ -11,7 +11,7 @@ export default class extends Component {
     const slug = context.query.slug
 
     // Make request for posts.
-    const response = await axios.get( `http://wordpress.test/wp-json/wp/v2/posts?slug=${ slug }` )
+    const response = await axios.get( `http://the-trekkers-hymn.local/wp-json/wp/v2/posts?slug=${ slug }` )
 
     // Return our only item in array from response to posts object in props.
     return {
